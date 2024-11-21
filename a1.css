@@ -1,0 +1,89 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+aside {
+    width: 25%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+main {
+    width: 70%;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* List Styles */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-bullets {
+    list-style-type: disc;
+}
+
+ul.list-numbers {
+    list-style-type: decimal;
+}
+
+ul.list-check {
+    list-style-type: none;
+}
+
+ul.list-check li {
+    display: flex;
+    align-items: center;
+}
+
+ul.list-check li input {
+    margin-right: 10px;
+}
+
+/* Themes */
+.theme-light {
+    background-color: #fff;
+    color: #000;
+}
+
+.theme-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.theme-blue {
+    background-color: #e0f7fa;
+    color: #00695c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        width: 90%;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Preferences Panel</title>
+    <link rel="stylesheet" href="a1.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Preferences Panel -->
+        <aside class="preferences-panel">
+            <h2>Preferences</h2>
+            <div class="preferences-group">
+                <label for="theme-select">Theme:</label>
+                <select id="theme-select">
+                    <option value="theme-light">Light</option>
+                    <option value="theme-dark">Dark</option>
+                    <option value="theme-blue">Blue</option>
+                </select>
+            </div>
+            <div class="preferences-group">
+                <label for="list-style-select">List Style:</label>
+                <select id="list-style-select">
+                    <option value="list-bullets">Bullets</option>
+                    <option value="list-numbers">Numbers</option>
+                    <option value="list-check">Checkboxes</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- List Section -->
+        <main>
+            <h1>Item List</h1>
+            <ul id="item-list">
+                <!-- Dynamically populated list items will go here -->
+            </ul>
+        </main>
+    </div>
+
+    <script src="a1.js"></script>
+</body>
+</html>
